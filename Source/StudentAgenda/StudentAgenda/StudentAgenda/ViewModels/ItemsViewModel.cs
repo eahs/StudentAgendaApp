@@ -16,11 +16,12 @@ namespace StudentAgenda.ViewModels
 
         public ObservableCollection<Item> Items { get; }
         public Command AddItemCommand { get; }
+        public Command AddAssignmentCommand { get; }
         public Command<Item> ItemTapped { get; }
 
         public ItemsViewModel()
         {
-            Title = "Browse";
+            Title = "Classes";
             Items = new ObservableCollection<Item>();
 
             ItemTapped = new Command<Item>(OnItemSelected);
@@ -67,9 +68,16 @@ namespace StudentAgenda.ViewModels
             }
         }
 
+        public string NewAssignmentPage { get; private set; }
+
         private async void OnAddItem(object obj)
         {
             await Shell.Current.GoToAsync(nameof(NewItemPage));
+        }
+
+        private async void OnAddAssignment(object obj)
+        {
+            await Shell.Current.GoToAsync(nameof(NewAssignmentPage));
         }
 
         async void OnItemSelected(Item item)

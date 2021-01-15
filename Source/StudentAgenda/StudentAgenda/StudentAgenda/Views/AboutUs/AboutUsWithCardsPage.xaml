@@ -87,7 +87,7 @@
                             FontFamily="{StaticResource Montserrat-Bold}"
                             FontSize="20"
                             Style="{StaticResource HeaderLabelStyle}"
-                            Text="About Us" />
+                            Text="What is the Student Agenda?" />
 
                         <!--  Description  -->
                         <Label
@@ -111,7 +111,7 @@
                         FontFamily="{StaticResource Montserrat-Bold}"
                         FontSize="20"
                         Style="{StaticResource HeaderLabelStyle}"
-                        Text="Our Team" />
+                        Text="Here's Our Team!" />
                 </StackLayout>
                 <!--  Employee profiles  -->
                 <listView:SfListView

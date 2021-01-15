@@ -7,7 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentAgenda.Android", "St
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentAgenda.iOS", "StudentAgenda\StudentAgenda.iOS\StudentAgenda.iOS.csproj", "{9400C99A-0E07-4BAD-B701-56CA2C7547C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentAgenda", "StudentAgenda\StudentAgenda\StudentAgenda.csproj", "{3A664AC2-837A-44A3-BC14-C7C39A653A28}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentAgenda", "StudentAgenda\StudentAgenda\StudentAgenda.csproj", "{3A664AC2-837A-44A3-BC14-C7C39A653A28}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F58EBE00-3013-407C-B5F2-75FE49AC897D}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -31,7 +31,7 @@ namespace StudentAgenda.ViewModels.AboutUs
         public AboutUsViewModel()
         {
             this.productDescription =
-                "Situated in the heart of Smith-town, Acme Products, Inc., has a long-standing tradition of selling the best products while providing the fastest service on the market. Since 1952, we’ve helped our customers identify their needs, understand their wants, and capture their dreams.";
+                "Created by some high school students, The Student Agenda was made to help students keep track of their work during the school year. ";
             this.productIcon = App.BaseImageUrl + "Icon.png";
             this.productVersion = "1.0";
             this.cardsTopImage = App.BaseImageUrl + "Mask.png";
@@ -40,58 +40,30 @@ namespace StudentAgenda.ViewModels.AboutUs
             {
                 new AboutUsModel
                 {
-                    EmployeeName = "Alice",
+                    EmployeeName = "Estaban Martinez",
                     Image = App.BaseImageUrl + "ProfileImage15.png",
-                    Designation = "Project Manager"
+                    Designation = "Scrum Master and Backend"
                 },
                 new AboutUsModel
                 {
-                    EmployeeName = "Jessica Park",
+                    EmployeeName = "Timothy Colberg",
                     Image = App.BaseImageUrl + "ProfileImage10.png",
-                    Designation = "Senior Manager"
+                    Designation = "Frontend"
                 },
                 new AboutUsModel
                 {
-                    EmployeeName = "Lisa",
+                    EmployeeName = "Chet Soto",
                     Image = App.BaseImageUrl + "ProfileImage11.png",
-                    Designation = "Senior Developer"
+                    Designation = "Backend"
                 },
                 new AboutUsModel
                 {
-                    EmployeeName = "Rebecca",
+                    EmployeeName = "Jake Newman",
                     Image = App.BaseImageUrl + "ProfileImage12.png",
-                    Designation = "Senior Designer"
+                    Designation = "Frontend"
                 },
-                new AboutUsModel
-                {
-                    EmployeeName = "Alexander",
-                    Image = App.BaseImageUrl + "ProfileImage3.png",
-                    Designation = "Senior Manager"
-                },
-                new AboutUsModel
-                {
-                    EmployeeName = "Anthony",
-                    Image = App.BaseImageUrl + "ProfileImage1.png",
-                    Designation = "Senior Developer"
-                },
-                new AboutUsModel
-                {
-                    EmployeeName = "Danielle",
-                    Image = App.BaseImageUrl + "ProfileImage7.png",
-                    Designation = "Senior Developer"
-                },
-                 new AboutUsModel
-                {
-                    EmployeeName = "Kyle Greene",
-                    Image = App.BaseImageUrl + "ProfileImage6.png",
-                    Designation = "Senior Developer"
-                },
-                  new AboutUsModel
-                {
-                    EmployeeName = "Navya Sharma",
-                    Image = App.BaseImageUrl + "ProfileImage13.png",
-                    Designation = "Testing Engineer"
-                }
+                
+             
             };
 
             this.ItemSelectedCommand = new Command(this.ItemSelected);
