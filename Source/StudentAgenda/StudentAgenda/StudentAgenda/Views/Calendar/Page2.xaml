@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StudentAgenda.Views.Calendar.Page2">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button 
+            Text="Right" 
+             />
+            <Button 
+             Text="Left" />
+            <DatePicker />
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="7" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="6" />
+                </Grid.RowDefinitions>
+            </Grid>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+
+    
+<!-- SPlit View
+    Get split view to look at stuff better.-->
+    

@@ -3,7 +3,7 @@
 # Student Agenda App 1.0 README
 
 By [YOUR NAMES HERE]
-
+#Chester Soto
 Easton Area High School
 
 Easton, PA
