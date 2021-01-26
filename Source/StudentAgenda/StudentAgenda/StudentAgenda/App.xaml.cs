@@ -20,6 +20,7 @@ namespace StudentAgenda
             InitializeComponent();
 
             DependencyService.Register<MockDataStore>();
+            DependencyService.Register<AssignmentDataStore>();
             MainPage = new AppShell();
         }
 

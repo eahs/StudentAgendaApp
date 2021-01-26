@@ -30,6 +30,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Views\ClassesPage.xaml.cs">
+      <DependentUpon>ClassesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ClassDetailPage.xaml.cs">
+      <DependentUpon>ClassDetailPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Update="Themes\LightTheme.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
@@ -38,6 +47,9 @@
     </EmbeddedResource>
     <EmbeddedResource Update="Views\AboutUs\Styles.xaml">
       <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\AssignmentsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Login\EmailEntry.xaml">
       <Generator>MSBuild:Compile</Generator>

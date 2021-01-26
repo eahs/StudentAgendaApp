@@ -4,9 +4,9 @@ using StudentAgenda.ViewModels;
 
 namespace StudentAgenda.Views
 {
-    public partial class ItemDetailPage : ContentPage
+    public partial class ClassDetailPage : ContentPage
     {
-        public ItemDetailPage()
+        public ClassDetailPage()
         {
             InitializeComponent();
             BindingContext = new ItemDetailViewModel();

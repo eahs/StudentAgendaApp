@@ -11,7 +11,7 @@ namespace StudentAgenda.Views
 {
     public partial class NewItemPage : ContentPage
     {
-        public Item Item { get; set; }
+        public Assignment Item { get; set; }
 
         public NewItemPage()
         {

@@ -13,15 +13,15 @@ using StudentAgenda.ViewModels;
 
 namespace StudentAgenda.Views
 {
-    public partial class ItemsPage : ContentPage
+    public partial class ClassesPage : ContentPage
     {
-        ItemsViewModel _viewModel;
+        ClassesViewModel _viewModel;
 
-        public ItemsPage()
+        public ClassesPage()
         {
             InitializeComponent();
 
-            BindingContext = _viewModel = new ItemsViewModel();
+            BindingContext = _viewModel = new ClassesViewModel();
         }
 
         protected override void OnAppearing()
