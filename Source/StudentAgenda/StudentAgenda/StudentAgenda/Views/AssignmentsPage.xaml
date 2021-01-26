@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StudentAgenda.Views.AssignmentsPage"
+             Title="{Binding Title}"
+             xmlns:local="clr-namespace:StudentAgenda.ViewModels"  
+             xmlns:model="clr-namespace:StudentAgenda.Models"  
+             x:Name="BrowseAssignmentsPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add" Command="{Binding AddAssignmentCommand}" />
+    </ContentPage.ToolbarItems>
+
+    <!--
+      x:DataType enables compiled bindings for better performance and compile time validation of binding expressions.
+      https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/data-binding/compiled-bindings
+    -->
+    <RefreshView x:DataType="local:AssignmentViewModel" Command="{Binding LoadItemsCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
+        <CollectionView x:Name="AssignmentsListView"
+                ItemsSource="{Binding Assignments}"
+                SelectionMode="None">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Padding="10" x:DataType="model:Assignment">
+                        <Label Text="{Binding Text}" 
+                            LineBreakMode="NoWrap" 
+                            Style="{DynamicResource ListAssignmentTextStyle}" 
+                            FontSize="16" />
+                        <Label Text="{Binding Description}" 
+                            LineBreakMode="NoWrap"
+                            Style="{DynamicResource ListAssignmentDetailTextStyle}"
+                            FontSize="13" />
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer 
+                                NumberOfTapsRequired="1"
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type local:AssignmentViewModel}}, Path=ItemTapped}"		
+                                CommandParameter="{Binding .}">
+                            </TapGestureRecognizer>
+                        </StackLayout.GestureRecognizers>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </RefreshView>
+</ContentPage>

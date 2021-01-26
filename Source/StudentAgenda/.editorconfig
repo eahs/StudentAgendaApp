@@ -2,3 +2,6 @@
 
 # CS0658: Not a recognized attribute location
 dotnet_diagnostic.CS0658.severity = none
+
+# CS8321: Local function is declared but never used
+dotnet_diagnostic.CS8321.severity = silent

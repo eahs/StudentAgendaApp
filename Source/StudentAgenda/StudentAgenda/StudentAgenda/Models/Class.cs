@@ -2,7 +2,7 @@
 
 namespace StudentAgenda.Models
 {
-    public class Item
+    public class Class
     {
         public string Id { get; set; }
         public string Text { get; set; }

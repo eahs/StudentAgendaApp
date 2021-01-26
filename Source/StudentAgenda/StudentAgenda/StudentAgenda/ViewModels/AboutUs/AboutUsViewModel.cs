@@ -41,26 +41,26 @@ namespace StudentAgenda.ViewModels.AboutUs
                 new AboutUsModel
                 {
                     EmployeeName = "Estaban Martinez",
-                    Image = App.BaseImageUrl + "ProfileImage15.png",
+                    Image = App.BaseImageUrl + "Icon.png",
                     Designation = "Scrum Master and Backend"
                 },
                 new AboutUsModel
                 {
                     EmployeeName = "Timothy Colberg",
-                    Image = App.BaseImageUrl + "ProfileImage10.png",
+                    Image = App.BaseImageUrl + "Icon.png",
                     Designation = "Frontend"
                 },
                 new AboutUsModel
                 {
                     EmployeeName = "Chet Soto",
-                    Image = App.BaseImageUrl + "ProfileImage11.png",
-                    Designation = "Backend"
+                    Image = App.BaseImageUrl + "Icon.png",
+                    Designation = "Frontend"
                 },
                 new AboutUsModel
                 {
                     EmployeeName = "Jake Newman",
-                    Image = App.BaseImageUrl + "ProfileImage12.png",
-                    Designation = "Frontend"
+                    Image = App.BaseImageUrl + "Icon.png",
+                    Designation = "Backend"
                 },
                 
              

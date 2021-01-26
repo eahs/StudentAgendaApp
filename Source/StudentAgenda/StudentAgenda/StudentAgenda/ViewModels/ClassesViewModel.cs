@@ -10,23 +10,23 @@ using StudentAgenda.Views;
 
 namespace StudentAgenda.ViewModels
 {
-    public class ItemsViewModel : BaseViewModel
+    public class ClassesViewModel : BaseViewModel
     {
-        private Item _selectedItem;
+        private Class _selectedItem;
 
-        public ObservableCollection<Item> Items { get; }
-        public Command AddItemCommand { get; }
-        public Command AddAssignmentCommand { get; }
-        public Command<Item> ItemTapped { get; }
+        public ObservableCollection<Class> Classes { get; }
+        public Command AddClassCommand { get; }
+        public Command LoadClassesCommand { get; }
+        public Command<Class> ClassTapped { get; }
 
-        public ItemsViewModel()
+        public ClassesViewModel()
         {
             Title = "Classes";
-            Items = new ObservableCollection<Item>();
+            Classes = new ObservableCollection<Class>();
 
-            ItemTapped = new Command<Item>(OnItemSelected);
-
-            AddItemCommand = new Command(OnAddItem);
+            ClassTapped = new Command<Class>(OnItemSelected);
+            AddClassCommand = new Command(OnAddItem);
+            
         }
 
         protected override async Task ExecuteLoadItemsCommand()
@@ -35,11 +35,11 @@ namespace StudentAgenda.ViewModels
 
             try
             {
-                Items.Clear();
+                Classes.Clear();
                 var items = await DataStore.GetItemsAsync(true);
                 foreach (var item in items)
                 {
-                    Items.Add(item);
+                    Classes.Add(item);
                 }
             }
             catch (Exception ex)
@@ -58,7 +58,8 @@ namespace StudentAgenda.ViewModels
             SelectedItem = null;
         }
 
-        public Item SelectedItem
+
+        public Class SelectedItem
         {
             get => _selectedItem;
             set
@@ -68,25 +69,19 @@ namespace StudentAgenda.ViewModels
             }
         }
 
-        public string NewAssignmentPage { get; private set; }
-
         private async void OnAddItem(object obj)
         {
             await Shell.Current.GoToAsync(nameof(NewItemPage));
         }
 
-        private async void OnAddAssignment(object obj)
-        {
-            await Shell.Current.GoToAsync(nameof(NewAssignmentPage));
-        }
 
-        async void OnItemSelected(Item item)
+        async void OnItemSelected(Class item)
         {
             if (item == null)
                 return;
 
             // This will push the ItemDetailPage onto the navigation stack
-            await Shell.Current.GoToAsync($"{nameof(ItemDetailPage)}?{nameof(ItemDetailViewModel.ItemId)}={item.Id}");
+            await Shell.Current.GoToAsync($"{nameof(ClassDetailPage)}?{nameof(ItemDetailViewModel.ItemId)}={item.Id}");
         }
     }
 }

@@ -16,7 +16,8 @@ namespace StudentAgenda.ViewModels
     {
         private bool isBusy = false, isError, dataAvailable;
         private string errorMessage = "";
-        public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>();
+        public IDataStore<Class> DataStore => DependencyService.Get<IDataStore<Class>>();
+        public IDataStore<Assignment> AssignmentsDataStore => DependencyService.Get<IDataStore<Assignment>>();
 
         public bool IsBusy
         {
@@ -126,6 +127,7 @@ namespace StudentAgenda.ViewModels
             }
             */
         }
+
 
         protected bool SetProperty<T>(ref T backingStore, T value,
             [CallerMemberName] string propertyName = "",

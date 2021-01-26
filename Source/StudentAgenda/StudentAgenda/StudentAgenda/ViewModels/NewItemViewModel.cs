@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Windows.Input;
 using StudentAgenda.Models;
+using StudentAgenda.Views;
 using Xamarin.Forms;
 
 namespace StudentAgenda.ViewModels
@@ -11,6 +12,8 @@ namespace StudentAgenda.ViewModels
     {
         private string text;
         private string description;
+        public Command AddAssignmentCommand { get; }
+
 
         public NewItemViewModel()
         {
@@ -44,19 +47,19 @@ namespace StudentAgenda.ViewModels
         private async void OnCancel()
         {
             // This will pop the current page off the navigation stack
-            await Shell.Current.GoToAsync("..");
+            await Shell.Current.GoToAsync(nameof(ClassesPage));
         }
 
         private async void OnSave()
         {
-            Item newItem = new Item()
+            Assignment newItem = new Assignment()
             {
                 Id = Guid.NewGuid().ToString(),
                 Text = Text,
                 Description = Description
             };
 
-            await DataStore.AddItemAsync(newItem);
+            await AssignmentsDataStore.AddItemAsync(newItem);
 
             // This will pop the current page off the navigation stack
             await Shell.Current.GoToAsync("..");
