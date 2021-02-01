@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StudentAgenda.Views.Calendar">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition Width="40"/>
+                </Grid.ColumnDefinitions>
+
+                <BoxView BackgroundColor="Red" Grid.Column="1" Grid.Row="1"/>
+                <BoxView BackgroundColor="Red" Grid.Column="2" Grid.Row="1"/>
+                <BoxView BackgroundColor="Red" Grid.Column="3" Grid.Row="1"/>
+                <BoxView BackgroundColor="Red" Grid.Column="4" Grid.Row="1"/>
+                <BoxView BackgroundColor="Red" Grid.Column="5" Grid.Row="1"/>
+                <BoxView BackgroundColor="Red" Grid.Column="6" Grid.Row="1"/>
+                <BoxView BackgroundColor="Red" Grid.Column="7" Grid.Row="1"/>
+                <BoxView BackgroundColor="Red" Grid.Column="1" Grid.Row="2"/>
+                <BoxView BackgroundColor="Red" Grid.Column="2" Grid.Row="2"/>
+                <BoxView BackgroundColor="Red" Grid.Column="3" Grid.Row="2"/>
+                <BoxView BackgroundColor="Red" Grid.Column="4" Grid.Row="2"/>
+                <BoxView BackgroundColor="Red" Grid.Column="5" Grid.Row="2"/>
+                <BoxView BackgroundColor="Red" Grid.Column="6" Grid.Row="2"/>
+                <BoxView BackgroundColor="Red" Grid.Column="7" Grid.Row="2"/>
+                <BoxView BackgroundColor="Red" Grid.Column="1" Grid.Row="3"/>
+                <BoxView BackgroundColor="Red" Grid.Column="2" Grid.Row="3"/>
+                <BoxView BackgroundColor="Red" Grid.Column="3" Grid.Row="3"/>
+                <BoxView BackgroundColor="Red" Grid.Column="4" Grid.Row="3"/>
+                <BoxView BackgroundColor="Red" Grid.Column="5" Grid.Row="3"/>
+                <BoxView BackgroundColor="Red" Grid.Column="6" Grid.Row="3"/>
+                <BoxView BackgroundColor="Red" Grid.Column="7" Grid.Row="3"/>
+                <BoxView BackgroundColor="Red" Grid.Column="1" Grid.Row="4"/>
+                <BoxView BackgroundColor="Red" Grid.Column="2" Grid.Row="4"/>
+                <BoxView BackgroundColor="Red" Grid.Column="3" Grid.Row="4"/>
+                <BoxView BackgroundColor="Red" Grid.Column="4" Grid.Row="4"/>
+                <BoxView BackgroundColor="Red" Grid.Column="5" Grid.Row="4"/>
+                <BoxView BackgroundColor="Red" Grid.Column="6" Grid.Row="4"/>
+                <BoxView BackgroundColor="Red" Grid.Column="7" Grid.Row="4"/>
+                <BoxView BackgroundColor="Red" Grid.Column="1" Grid.Row="4"/>
+                <BoxView BackgroundColor="Red" Grid.Column="2" Grid.Row="4"/>
+                <BoxView BackgroundColor="Red" Grid.Column="3" Grid.Row="4"/>
+                <BoxView BackgroundColor="Red" Grid.Column="4" Grid.Row="4"/>
+                <BoxView BackgroundColor="Red" Grid.Column="5" Grid.Row="4"/>
+                <BoxView BackgroundColor="Red" Grid.Column="6" Grid.Row="4"/>
+                <BoxView BackgroundColor="Red" Grid.Column="7" Grid.Row="4"/>
+                <BoxView BackgroundColor="Red" Grid.Column="1" Grid.Row="5"/>
+                <BoxView BackgroundColor="Red" Grid.Column="2" Grid.Row="5"/>
+                <BoxView BackgroundColor="Red" Grid.Column="3" Grid.Row="5"/>
+                <BoxView BackgroundColor="Red" Grid.Column="4" Grid.Row="5"/>
+                <BoxView BackgroundColor="Red" Grid.Column="5" Grid.Row="5"/>
+                <BoxView BackgroundColor="Red" Grid.Column="6" Grid.Row="5"/>
+                <BoxView BackgroundColor="Red" Grid.Column="7" Grid.Row="5"/>
+                <BoxView BackgroundColor="Red" Grid.Column="1" Grid.Row="6"/>
+
+
+                <!-- Week 1-->
+                <Label Text="1" FontSize="Large" TextColor="Black" Grid.Column="6" Grid.Row="1"/>
+                <Label Text="2" FontSize="Large" TextColor="Black" Grid.Column="7" Grid.Row="1"/>
+                <!-- Week 2-->
+                <Label Text="3" FontSize="Large" TextColor="Black" Grid.Column="1" Grid.Row="2"/>
+                <Label Text="4" FontSize="Large" TextColor="Black" Grid.Column="2" Grid.Row="2"/>
+                <Label Text="5" FontSize="Large" TextColor="Black" Grid.Column="3" Grid.Row="2"/>
+                <Label Text="6" FontSize="Large" TextColor="Black" Grid.Column="4" Grid.Row="2"/>
+                <Label Text="7" FontSize="Large" TextColor="Black" Grid.Column="5" Grid.Row="2"/>
+                <Label Text="8" FontSize="Large" TextColor="Black" Grid.Column="6" Grid.Row="2"/>
+                <Label Text="9" FontSize="Large" TextColor="Black" Grid.Column="7" Grid.Row="2"/>
+                <!-- Week 3-->
+                <Label Text="10" FontSize="Large" TextColor="Black" Grid.Column="1" Grid.Row="3"/>
+                <Label Text="11" FontSize="Large" TextColor="Black" Grid.Column="2" Grid.Row="3"/>
+                <Label Text="12" FontSize="Large" TextColor="Black" Grid.Column="3" Grid.Row="3"/>
+                <Label Text="13" FontSize="Large" TextColor="Black" Grid.Column="4" Grid.Row="3"/>
+                <Label Text="14" FontSize="Large" TextColor="Black" Grid.Column="5" Grid.Row="3"/>
+                <Label Text="15" FontSize="Large" TextColor="Black" Grid.Column="6" Grid.Row="3"/>
+                <Label Text="16" FontSize="Large" TextColor="Black" Grid.Column="7" Grid.Row="3"/>
+                <!-- Week 4-->
+                <Label Text="17" FontSize="Large" TextColor="Black" Grid.Column="1" Grid.Row="4"/>
+                <Label Text="18" FontSize="Large" TextColor="Black" Grid.Column="2" Grid.Row="4"/>
+                <Label Text="19" FontSize="Large" TextColor="Black" Grid.Column="3" Grid.Row="4"/>
+                <Label Text="20" FontSize="Large" TextColor="Black" Grid.Column="4" Grid.Row="4"/>
+                <Label Text="21" FontSize="Large" TextColor="Black" Grid.Column="5" Grid.Row="4"/>
+                <Label Text="22" FontSize="Large" TextColor="Black" Grid.Column="6" Grid.Row="4"/>
+                <Label Text="23" FontSize="Large" TextColor="Black" Grid.Column="7" Grid.Row="4"/>
+                <!-- Week 5-->
+                <Label Text="24" FontSize="Large" TextColor="Black" Grid.Column="1" Grid.Row="5"/>
+                <Label Text="25" FontSize="Large" TextColor="Black" Grid.Column="2" Grid.Row="5"/>
+                <Label Text="26" FontSize="Large" TextColor="Black" Grid.Column="3" Grid.Row="5"/>
+                <Label Text="27" FontSize="Large" TextColor="Black" Grid.Column="4" Grid.Row="5"/>
+                <Label Text="28" FontSize="Large" TextColor="Black" Grid.Column="5" Grid.Row="5"/>
+                <Label Text="29" FontSize="Large" TextColor="Black" Grid.Column="6" Grid.Row="5"/>
+                <Label Text="30" FontSize="Large" TextColor="Black" Grid.Column="7" Grid.Row="5"/>
+
+                <Label Text="31" FontSize="Large" TextColor="Black" Grid.Column="1" Grid.Row="6"/>
+                <Label Text="To do" FontSize="Title" TextColor="Black" Grid.Column="2" Grid.Row="7" Grid.ColumnSpan="5" Grid.RowSpan="5" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="1st Thing to Do" FontSize="Small" TextColor="Black" Grid.Column="1" Grid.Row="8" Grid.ColumnSpan="8" Grid.RowSpan="2"/>
+                <Label Text="2nd Thing to do" FontSize="Small" TextColor="Black" Grid.Column="1" Grid.Row="9" Grid.ColumnSpan="8" Grid.RowSpan="2"/>
+                <Label Text="3rd Thing to do" FontSize="Small" TextColor="Black" Grid.Column="1" Grid.Row="10" Grid.ColumnSpan="8" Grid.RowSpan="2"/>
+                <Label Text="4th Thing to do" FontSize="Small" TextColor="Black" Grid.Column="1" Grid.Row="11" Grid.ColumnSpan="8" Grid.RowSpan="2"/>
+
+
+
+
+
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

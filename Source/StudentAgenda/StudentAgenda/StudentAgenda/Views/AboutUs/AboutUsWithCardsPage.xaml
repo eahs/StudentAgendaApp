@@ -175,7 +175,12 @@
                                         HorizontalOptions="Center"
                                         HorizontalTextAlignment="Center"
                                         Style="{StaticResource VersionLabelStyle}"
-                                        Text="{Binding Designation}" />
+                                        Text="{Binding Designation}"/>
+
+                                    <Label
+                                        HorizontalOptions="Center"
+                                        HorizontalTextAlignment="Center"
+                                        Style="{StaticResource VersionLavel}"/>
 
                                 </StackLayout>
                             </control:CustomShadowFrame>
